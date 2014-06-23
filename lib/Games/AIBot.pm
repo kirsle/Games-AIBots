@@ -52,9 +52,7 @@ use fields qw/max_fuel  max_ammo  max_life
 
 sub new {
     my $class = shift;
-    my $bot   = ($] > 5.00562) ? fields::new($class)
-                               : do { no strict 'refs';
-                                      bless [\%{$class.'::FIELDS'}], $class };
+    my $bot   = fields::new($class);
     $bot->loadfile($_[0]);
     push @{$bot->{'cmds'}}, 'attempt destruct';
 
@@ -62,7 +60,7 @@ sub new {
     foreach my $line (@{$bot->{'cmds'}}) {
         $count++;
         my $condflag = int($line !~ m/^(?:\$|if|else|elsif|unless|print)/);
-        $line =~ s/\$(\w+)/exists($bot->[0]->{$1}) ? "\${\$bot}{$1}" : "\${\$bot}{'var'}{$1}"/eg;
+        $line =~ s/\$(\w+)/exists($bot->{$1}) ? "\${\$bot}{$1}" : "\${\$bot}{'var'}{$1}"/eg;
         $line =~ s/\&(?=\w+)/\$bot->_/g;
         $bot->{'lineidx'}     .= $condflag; # and (index($line, '$') > -1));
         $bot->{'stateidx'}{$1} = $count

@@ -1,3 +1,16 @@
+Games::AIBots
+=============
+
+This is a fork of the Games::AIBots v0.03 module from CPAN, originally written
+by Autrijus Tang. I updated the code to fix a small bug that was preventing the
+game from running on modern Perl. Check git history for my changes.
+
+The original README follows.
+
+
+--------------------------------------------------------------------------------
+
+
 # $File: //member/autrijus/AIBots/README $ $Author: autrijus $
 # $Revision: #3 $ $Change: 692 $ $DateTime: 2002/08/17 09:29:13 $
 

@@ -1,12 +1,12 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.06.
+signed via the Module::Signature module, version 0.73.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
 
     % cpansign -v
 
-It would check each file's integrity, as well as the signature's
+It will check each file's integrity, as well as the signature's
 validity.  If "==> Signature verified OK! <==" is not displayed,
 the distribution may already have been compromised, and you should
 not run its Makefile.PL or Build.PL.
@@ -51,7 +51,7 @@ SHA1 a0bbb59866d343389b0d861b1f7e9b7dde6bf480 doc/aibots.files/image027.gif
 SHA1 d5901c339ada0872f0bc34a0de765cc415dcd05b doc/aibots.files/image028.gif
 SHA1 563f76d5b4ef327a3415593aed3c29421be31157 doc/aibots.html
 SHA1 1cf67a9603a66f81b1cb2e54c84f766e74075593 doc/aibots.zh_tw.html
-SHA1 510c35b8c8e8cafbb51f7849c65a664d68baf54d lib/Games/AIBot.pm
+SHA1 15a1c701cb9bce15c59194516e9535f6703cff4e lib/Games/AIBot.pm
 SHA1 f98b7ea5338ea61ac1244e5511a8762918d0f686 lib/Games/AIBots.pm
 SHA1 989348c7cb5fb97229225734edf650e66a2e7b13 lib/Games/AIBots/bots/Class0.bot
 SHA1 efd94f1729c603c18bc1653bd6a6035369d2655b lib/Games/AIBots/bots/Cocoon.bot
@@ -229,9 +229,13 @@ SHA1 dcde8c3a3b61a9faea68280dda040902e7be347d lib/Games/AIBots/wavs/select.wav
 SHA1 149a686591b49585c7c51a83a2ebef89ecb9241b lib/Games/AIBots/wavs/toggle.wav
 SHA1 3aee4bde510d1a55156f996c0f3abdd96d04bb1d t/AIBots.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.0.7 (FreeBSD)
+Version: GnuPG v1
 
-iD8DBQE9Xn3UtLPdNzw1AaARAjgHAKCi57JmhIIngJbCENuIIjbz/uXI1ACgr+4j
-KdhPj5WwpDHR0HCfi7Dd1a4=
-=fSVJ
+iQEcBAEBAgAGBQJTqKwdAAoJEKoOwp45cf9fNcAH/0gJS/zcodxne/Qi4YrU9gXN
+L8K5CXoZLtyIR1tBS6H0A0LhmqXTsj4u+jFRtBB872sOMXlxBYFP4eDnyoC3vqEm
+Xrf6eYD3hl6a0NvTgUC5J9Z5cmL0QStZhlaMKD+8Na8wofuunlK8SgagvLJpWGEV
+DOJURd3kdfdM7/h5bDe/43FztfmtWYjX1oDLyboxoCkqEPDIh1otzlFmi+PM7Awr
+Y75HVXk6o4O0VKRVfgpCGWf5K54MigoiMKXPr0KLAy3rFndbeRf11ySc0Bsxc4VE
+Rw/IU6d6nwmL57aP53BlNKOWq3NUwONSnxni/8OMdW5fpwCPGmyX6coSjv1+kk0=
+=DpeK
 -----END PGP SIGNATURE-----
